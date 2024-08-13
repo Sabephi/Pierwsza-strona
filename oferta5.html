@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>MKAuto - Komis Samochodowy</title>
+	<meta name="description" content="Komis samochodowy z wieloletnim stazem. Sprzedaz kupno samochodów uzywanych na terenie całej Polski. Mamy odziały w kilku miastach w kraju.">
+	<meta name="keywords" content="samochód, auto, sprzedaj, kup, komis samochodowy, dealer, leasing">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="main.css">
+	<link rel = "stylesheet" href = "css/fontello.css" type = "text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	
+	
+
+	
+</head>
+
+<body>
+
+	<header>
+		
+		<div class="menu">
+			<li><a href="index.html">Strona Główna</a></li>
+			<li><a href="kup.html">Kup Samochód</a></li>
+			<li><a href="sprzedaj.html">Sprzedaj Samochód</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</div>
+	
+	</header>
+
+
+
+	<div class = "pojemnik">
+		<div class = "nazwaauta">
+			<h1>Honda Civic</h1>
+		</div>
+
+		<div class = "slider">
+			<div class="slider-pojemnik">
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">1 / 10</div>
+					<img src="img/oferta5/1.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">2 / 10</div>
+					<img src="img/oferta5/2.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">3 / 10</div>
+					<img src="img/oferta5/3.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">4 / 10</div>
+					<img src="img/oferta5/4.jpeg" style="width:100%">
+				</div>	
+				
+				<div class="mySlides fade">
+					<div class="numer-zdj">5 / 10</div>
+					<img src="img/oferta5/5.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">6 / 10</div>
+					<img src="img/oferta5/6.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">7 / 10</div>
+					<img src="img/oferta5/7.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">8 / 10</div>
+					<img src="img/oferta5/8.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">9 / 10</div>
+					<img src="img/oferta5/9.jpeg" style="width:100%">
+				</div>
+				
+				<div class="mySlides fade">
+					<div class="numer-zdj">10 / 10</div>
+					<img src="img/oferta5/9.jpeg" style="width:100%">
+				</div>
+				
+			
+				<a class="poprzedni" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="nastepny" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+				<span class="kropka" onclick="currentSlide(1)"></span>
+				<span class="kropka" onclick="currentSlide(2)"></span>
+				<span class="kropka" onclick="currentSlide(3)"></span>
+				<span class="kropka" onclick="currentSlide(4)"></span>	
+				<span class="kropka" onclick="currentSlide(5)"></span>
+				<span class="kropka" onclick="currentSlide(6)"></span>
+				<span class="kropka" onclick="currentSlide(7)"></span>
+				<span class="kropka" onclick="currentSlide(8)"></span>
+				<span class="kropka" onclick="currentSlide(9)"></span>
+				<span class="kropka" onclick="currentSlide(10)"></span>
+			</div>
+
+			<script>
+						var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("kropka");
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" aktywny", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " aktywny";
+				}
+		</script>
+
+		</div>
+		<div class = "szczegoly">
+
+			<div class = "cenaszczegoly">
+				22 000 PLN
+			</div>
+			<div class = "infoszczegoly1">
+
+				<li>Kategoria: Osobowe</li>
+				<li>Marka pojazdu: Fiat</li>
+				<li>Model pojazdu: 126</li>
+				<li>Wersja: 650 Elegant</li>
+				<li>Generacja: el</li>
+				<li>Rok produkcji: 1996</li>
+				<li>Przebieg: 21 000 km</li>
+				<li>Pojemność silnika: 652 cm<sup>3</sup></li>
+				<li>Podzaj paliwa: Benzyna</li>
+				<li>Moc: 24 KM</li>
+				<li>Skrzynia biegów: Manualna</li>
+
+			</div>
+			<div class = "infoszczegoly2">
+
+				<li>Napęd: Na tylne koła</li>
+				<li>Typ nadwozia: Auta małe</li>
+				<li>Liczba drzwi: 2</li>
+				<li>Liczba miejsc: 4</li>
+				<li>Kolor lakieru: Zielony</li>
+				<li>Faktura VAT: Tak</li>
+				<li>Pierszy właściciel: Nie</li>
+				<li>Bezwypadkowy: Tak</li>
+				<li>Serwisowany w ASO: Tak</li>
+				<li>Przegląd do: 05/03/2022</li>
+				<li>Ubezpieczenie do: 14/05/2022</li>
+
+			</div>
+			<div class = "cenaszczegoly">
+				
+			</div>
+		</div>
+		<div style = "clear:both"></div>
+
+		<div class = "pojemnikoferta">
+
+			<h3>Opis</h3>
+			<div class = "opisoferta">
+
+				Maluch użytkowany okazjonalnie jedynie wiosną i latem, pozostałą część roku garażowany. Do auta dołączam sporo nowych części zapasowych. Oryginalne opony. Badanie i OC aktualne.
+				<br/><br/>
+				Pełna dokumentacja, faktura zakupu, komplet kluczyków, przegląd techniczny<br/>
+				Auto bez najmniejszych śladów korozji, lakier fabryczny <br/>
+				Bezwypadkowy, z ogrzewaną tylną szybą i dodatkowym wyposażeniem: bagażnik na dachu, założony w chwili kupna, w salonie. Serwisowany w ASO
+
+				<br/><br/>
+				Uwaga!<br/>
+				Niniejsze ogłoszenia jest wyłącznie informacją handlową i nie stanowi
+				oferty w myśl art 66,A§1 Kodeksu Cywilnego. Sprzedający nie odpowiada
+				za ewentualne błędy lub nieaktualności ogłoszenia.
+				Informacje umieszczone w ogłoszeniu służą wyłącznie celom informacyjnym.
+				Nie stanowią oferty w rozumieniu art.4 ustawy z dnia 27 Lipca 2002 roku o szczególnych warunkach sprzedaży konsumenckiej.
+
+			</div>
+
+			<h3>Wyposażenie</h3>
+
+			<div class = "wyposazenie">
+				<div class = "wyposazenie2">
+
+					<i class="demo-icon icon-ok-circled2"></i>Radio fabryczne, 
+					<i class="demo-icon icon-ok-circled2"></i>Tapicerka skórzana
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<div class = "stopka">
+		&copy Designed by 
+		<a href = "https://www.facebook.com/mikiprzewo" target="_blank">Mikołaj Przewoźny</a>, 
+		<a href = "https://www.facebook.com/profile.php?id=100008271615667" target="_blank">Kamil Walkowiak</a>
+	</div>
+
+</body>
+</html>

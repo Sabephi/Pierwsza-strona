@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2021 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="clock" unicode="&#xe800;" d="M500 546v-250q0-7-5-12t-13-5h-178q-8 0-13 5t-5 12v36q0 8 5 13t13 5h125v196q0 8 5 13t12 5h36q8 0 13-5t5-13z m232-196q0 83-41 152t-110 111-152 41-153-41-110-111-41-152 41-152 110-111 153-41 152 41 110 111 41 152z m125 0q0-117-57-215t-156-156-215-58-216 58-155 156-58 215 58 215 155 156 216 58 215-58 156-156 57-215z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="ok-circled2" unicode="&#xe801;" d="M0 350q0 207 147 354t353 146 354-146 146-354-146-354-354-146-353 146-147 354z m109 0q0-162 115-276t276-115 276 115 115 276-115 276-276 115-276-115-115-276z m106-51l94 92 93-94 289 291 94-93-291-289-92-94-93 94z" horiz-adv-x="1000" />
+
+<glyph glyph-name="desktop" unicode="&#xe802;" d="M0 104l0 660 1000 0 0-660-363 0 0-96 88 0 0-72-450 0 0 72 88 0 0 96-363 0z m123 125l754 0 0 410-754 0 0-410z" horiz-adv-x="1000" />
+
+<glyph glyph-name="check" unicode="&#xe803;" d="M0-150l0 1000 646 0-164-164-318 0 0-672 672 0 0 319 164 164 0-647-1000 0z m234 623l133 131 129-129 361 363 133-132-361-364-133-133z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

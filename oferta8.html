@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>MKAuto - Komis Samochodowy</title>
+	<meta name="description" content="Komis samochodowy z wieloletnim stazem. Sprzedaz kupno samochodów uzywanych na terenie całej Polski. Mamy odziały w kilku miastach w kraju.">
+	<meta name="keywords" content="samochód, auto, sprzedaj, kup, komis samochodowy, dealer, leasing">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="main.css">
+	<link rel = "stylesheet" href = "css/fontello.css" type = "text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	
+	
+
+	
+</head>
+
+<body>
+
+	<header>
+		
+		<div class="menu">
+			<li><a href="index.html">Strona Główna</a></li>
+			<li><a href="kup.html">Kup Samochód</a></li>
+			<li><a href="sprzedaj.html">Sprzedaj Samochód</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</div>
+	
+	</header>
+
+
+
+	<div class = "pojemnik">
+		<div class = "nazwaauta">
+			<h1>BMW Seria 3</h1>
+		</div>
+
+		<div class = "slider">
+
+			<div class="slider-pojemnik">
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">1 / 10</div>
+					<img src="img/oferta8/1.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">2 / 10</div>
+					<img src="img/oferta8/2.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">3 / 10</div>
+					<img src="img/oferta8/3.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">4 / 10</div>
+					<img src="img/oferta8/4.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">5 / 10</div>
+					<img src="img/oferta8/5.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">6 / 10</div>
+					<img src="img/oferta8/6.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">7 / 10</div>
+					<img src="img/oferta8/7.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">8 / 10</div>
+					<img src="img/oferta8/7.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">9 / 10</div>
+					<img src="img/oferta8/7.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">10 / 10</div>
+					<img src="img/oferta8/7.jpeg" style="width:100%">
+				</div>
+				
+				<a class="poprzedni" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="nastepny" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+				<span class="kropka" onclick="currentSlide(1)"></span>
+				<span class="kropka" onclick="currentSlide(2)"></span>
+				<span class="kropka" onclick="currentSlide(3)"></span>
+				<span class="kropka" onclick="currentSlide(4)"></span>
+				<span class="kropka" onclick="currentSlide(5)"></span>
+				<span class="kropka" onclick="currentSlide(6)"></span>
+				<span class="kropka" onclick="currentSlide(7)"></span>
+				<span class="kropka" onclick="currentSlide(8)"></span>
+				<span class="kropka" onclick="currentSlide(9)"></span>
+				<span class="kropka" onclick="currentSlide(10)"></span>
+			</div>
+
+			<script>
+						var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("kropka");
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" aktywny", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " aktywny";
+				}
+		</script>
+
+		</div>
+		<div class = "szczegoly">
+
+			<div class = "cenaszczegoly">
+				139 900 PLN
+			</div>
+			<div class = "infoszczegoly1">
+
+				<li>Kategoria: Osobowe</li>
+				<li>Marka pojazdu: BMW</li>
+				<li>Model pojazdu: Seria 3</li>
+				<li>Wersja: 330i</li>
+				<li>Generacja: G20</li>
+				<li>Rok produkcji: 2019</li>
+				<li>Przebieg: 19 600 km</li>
+				<li>Pojemność silnika: 1998 cm<sup>3</sup></li>
+				<li>Podzaj paliwa: Benzyna</li>
+				<li>Moc: 258 KM</li>
+				<li>Skrzynia biegów: Automatyczna</li>
+
+			</div>
+			<div class = "infoszczegoly2">
+
+				<li>Napęd: Na tylne koła</li>
+				<li>Typ nadwozia: Sedan</li>
+				<li>Liczba drzwi: 5</li>
+				<li>Liczba miejsc: 5</li>
+				<li>Kolor lakieru: Czarny</li>
+				<li>Faktura VAT: Tak</li>
+				<li>Pierszy właściciel: Nie</li>
+				<li>Bezwypadkowy: Nie</li>
+				<li>Serwisowany w ASO: Tak</li>
+				<li>Przegląd do: 21/08/22</li>
+				<li>Ubezpieczenie do: 05/06/22</li>
+
+			</div>
+			<div class = "cenaszczegoly">
+				
+			</div>
+		</div>
+		<div style = "clear:both"></div>
+
+		<div class = "pojemnikoferta">
+
+			<h3>Opis</h3>
+			<div class = "opisoferta">
+				BMW 330I
+				ROK PRODUKCJI 2019
+				PRZEBIEG 19600km
+				Wersja SPORT LINE
+				KOLOR: 475 CZARNY SZAFIR
+				SALON POLSKA
+				ŚWIEŻO PO SERWISIE (BMW OLSZOWIEC POZNAŃ)
+				ORYGINALNY LAKIER
+				Dwa kluczyki
+				<br /><br />
+				Auto jezdne delikatnie uszkodzone. Do wymiany Lampa, Błotnik, Zderzak.
+				Dodatkowe wyposażenie: 
+				Tapicerka materiałowo-skórzana, 
+				Śruby zabezpieczające, 
+				Czujnik ciśnienia powietrza, 
+				System alarmowy, 
+				Trójkąt ostrzegawczy, 
+				System załadunkowy, 
+				Regulator prędkości z funkcją hamowania, 
+				Funkcja dezaktywacji poduszki powietrznej, 
+				Składane zagłówki tylne, 
+				Teleserwis, 
+				Połączenie alarmowe, 
+				Usługi ConnectedDrive, 
+				Dostęp komfortowy, 
+				Ogrzewanie foteli przednich, 
+				Asystent świateł drogowych, 
+				Reflektory LED o rozszerzonym zakresie, 
+				Hotspot Wifi, 
+				Sportowa automatyczna skrzynia biegów z łopatkami, 
+				Zmienny sportowy układ kierowniczy, 
+				Lusterko tylne przyciemniane automatycznie, 
+				Sportowe fotele przednie, 
+				Pakiet dodatkowych schowków, 
+				Listwy ozdobne Aluminium "Mesheffect", 
+				Oświetlenie ambientowe, 
+				Klimatyzacja automatyczna, 
+				Diodowe reflektory przeciwmgielne, 
+				Parking Assistant, 
+				Kierownica sportowa M, skórzana, 
+				Obramowania BMW Individual Shadow Line czarne na wysoki połysk, 
+				Podsufitka BMW Individual Anthracite, 
+				Polska wersja językowa, 
+				Polska instrukcja obsługi, 
+				Pakiet Connected Drive Plus, 
+				Pakiet Connected professional, 
+				Telefonia komfortowa z ładowaniem bezprzewodowym, 
+				BMW Live Cocpkit Professional, 
+				Pakiet serwisowy Service Inclusive 5lat/100 000km, 
+				Opony zimowe.
+				
+			</div>
+
+			<h3>Wyposażenie</h3>
+
+			<div class = "wyposazenie">
+				<div class = "wyposazenie2">
+				
+					<i class="demo-icon icon-ok-circled2"></i>ABS, 
+					<i class="demo-icon icon-ok-circled2"></i>Elektrycznie ustawiane lusterka, 
+					<i class="demo-icon icon-ok-circled2"></i>Poduszka powietrzna pasażera, 
+					<i class="demo-icon icon-ok-circled2"></i>Alarm, 
+					<i class="demo-icon icon-ok-circled2"></i>Asystent parkowania, 
+					<i class="demo-icon icon-ok-circled2"></i>Czujnik deszczu, 
+					<i class="demo-icon icon-ok-circled2"></i>Czujniki parkowania tylne, 
+					<i class="demo-icon icon-ok-circled2"></i>Elektryczne szyby tylne, 
+					<i class="demo-icon icon-ok-circled2"></i>Gniazdo USB, 
+					<i class="demo-icon icon-ok-circled2"></i>Klimatyzacja automatyczna, 
+					<i class="demo-icon icon-ok-circled2"></i>Kurtyny powietrzne, 
+					<i class="demo-icon icon-ok-circled2"></i>Nawigacja GPS, 
+					<i class="demo-icon icon-ok-circled2"></i>Podgrzewane lusterka boczne, 
+					<i class="demo-icon icon-ok-circled2"></i>Poduszki boczne przednie, 
+					<i class="demo-icon icon-ok-circled2"></i>Światła do jazdy dziennej, 
+					<i class="demo-icon icon-ok-circled2"></i>Tapicerka skórzana, 
+					<i class="demo-icon icon-ok-circled2"></i>Centralny zamek, 
+					<i class="demo-icon icon-ok-circled2"></i>Immobilizer, 
+					<i class="demo-icon icon-ok-circled2"></i>Radio fabryczne, 
+					<i class="demo-icon icon-ok-circled2"></i>Alufelgi, 
+					<i class="demo-icon icon-ok-circled2"></i>Asystent pasa ruchu, 
+					<i class="demo-icon icon-ok-circled2"></i>Czujnik zmierzchu, 
+					<i class="demo-icon icon-ok-circled2"></i>Elektrochromatyczne lusterka boczne, 
+					<i class="demo-icon icon-ok-circled2"></i>ESP (stabilizacja toru jazdy), 
+					<i class="demo-icon icon-ok-circled2"></i>Isofix, 
+					<i class="demo-icon icon-ok-circled2"></i>Klimatyzacja dwustrefowa, 
+					<i class="demo-icon icon-ok-circled2"></i>Łopatki zmiany biegów, 
+					<i class="demo-icon icon-ok-circled2"></i>Ogranicznik prędkości, 
+					<i class="demo-icon icon-ok-circled2"></i>Podgrzewane przednie siedzenia, 
+					<i class="demo-icon icon-ok-circled2"></i>Poduszki boczne tylne, 
+					<i class="demo-icon icon-ok-circled2"></i>Światła LED, 
+					<i class="demo-icon icon-ok-circled2"></i>Tempomat, 
+					<i class="demo-icon icon-ok-circled2"></i>Elektryczne szyby przednie, 
+					<i class="demo-icon icon-ok-circled2"></i>Poduszka powietrzna kierowcy, 
+					<i class="demo-icon icon-ok-circled2"></i>Wspomaganie kierownicy, 
+					<i class="demo-icon icon-ok-circled2"></i>ASR (kontrola trakcji), 
+					<i class="demo-icon icon-ok-circled2"></i>Bluetooth, 
+					<i class="demo-icon icon-ok-circled2"></i>Czujniki parkowania przednie, 
+					<i class="demo-icon icon-ok-circled2"></i>Elektrochromatyczne lusterko wsteczne, 
+					<i class="demo-icon icon-ok-circled2"></i>Gniazdo AUX, 
+					<i class="demo-icon icon-ok-circled2"></i>Kamera cofania, 
+					<i class="demo-icon icon-ok-circled2"></i>Komputer pokładowy, 
+					<i class="demo-icon icon-ok-circled2"></i>MP3, 
+					<i class="demo-icon icon-ok-circled2"></i>Podgrzewana przednia szyba, 
+					<i class="demo-icon icon-ok-circled2"></i>Poduszka powietrzna chroniąca kolana, 
+					<i class="demo-icon icon-ok-circled2"></i>System Start-Stop, 
+					<i class="demo-icon icon-ok-circled2"></i>Światła przeciwmgielne, 
+					<i class="demo-icon icon-ok-circled2"></i>Wielofunkcyjna kierownica
+
+
+					
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<div class = "stopka">
+		&copy Designed by 
+		<a href = "https://www.facebook.com/mikiprzewo" target="_blank">Mikołaj Przewoźny</a>, 
+		<a href = "https://www.facebook.com/profile.php?id=100008271615667" target="_blank">Kamil Walkowiak</a>
+	</div>
+
+</body>
+</html>

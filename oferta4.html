@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>MKAuto - Komis Samochodowy</title>
+	<meta name="description" content="Komis samochodowy z wieloletnim stazem. Sprzedaz kupno samochodów uzywanych na terenie całej Polski. Mamy odziały w kilku miastach w kraju.">
+	<meta name="keywords" content="samochód, auto, sprzedaj, kup, komis samochodowy, dealer, leasing">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="main.css">
+	<link rel = "stylesheet" href = "css/fontello.css" type = "text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	
+	
+
+	
+</head>
+
+<body>
+
+	<header>
+		
+		<div class="menu">
+			<li><a href="index.html">Strona Główna</a></li>
+			<li><a href="kup.html">Kup Samochód</a></li>
+			<li><a href="sprzedaj.html">Sprzedaj Samochód</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</div>
+	
+	</header>
+
+
+
+	<div class = "pojemnik">
+		<div class = "nazwaauta">
+			<h1>Honda Civic</h1>
+		</div>
+
+		<div class = "slider">
+			<div class="slider-pojemnik">
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">1 / 9</div>
+					<img src="img/oferta4/1.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">2 / 9</div>
+					<img src="img/oferta4/2.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">3 / 9</div>
+					<img src="img/oferta4/3.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">4 / 9</div>
+					<img src="img/oferta4/4.jpeg" style="width:100%">
+				</div>	
+				
+				<div class="mySlides fade">
+					<div class="numer-zdj">5 / 9</div>
+					<img src="img/oferta4/5.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">6 / 9</div>
+					<img src="img/oferta4/6.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">7 / 9</div>
+					<img src="img/oferta4/7.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">8 / 9</div>
+					<img src="img/oferta4/8.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">9 / 9</div>
+					<img src="img/oferta4/9.jpeg" style="width:100%">
+				</div>
+				
+			
+				<a class="poprzedni" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="nastepny" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+				<span class="kropka" onclick="currentSlide(1)"></span>
+				<span class="kropka" onclick="currentSlide(2)"></span>
+				<span class="kropka" onclick="currentSlide(3)"></span>
+				<span class="kropka" onclick="currentSlide(4)"></span>
+				<span class="kropka" onclick="currentSlide(5)"></span>
+				<span class="kropka" onclick="currentSlide(6)"></span>
+				<span class="kropka" onclick="currentSlide(7)"></span>
+				<span class="kropka" onclick="currentSlide(8)"></span>
+				<span class="kropka" onclick="currentSlide(9)"></span>
+			</div>
+
+			<script>
+						var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("kropka");
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" aktywny", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " aktywny";
+				}
+		</script>
+
+		</div>
+		<div class = "szczegoly">
+
+			<div class = "cenaszczegoly">
+				27 900 PLN
+			</div>
+			<div class = "infoszczegoly1">
+
+				<li>Kategoria: Osobowe</li>
+				<li>Marka pojazdu: Honda</li>
+				<li>Model pojazdu: Civic</li>
+				<li>Wersja: 1.8 Executive NAVI</li>
+				<li>Generacja: VIII</li>
+				<li>Rok produkcji: 2010</li>
+				<li>Przebieg: 221 821 km</li>
+				<li>Pojemność silnika: 1 798 cm<sup>3</sup></li>
+				<li>Podzaj paliwa: Benzyna</li>
+				<li>Moc: 140 KM</li>
+				<li>Skrzynia biegów: Manualna</li>
+
+			</div>
+			<div class = "infoszczegoly2">
+
+				<li>Napęd: Na przednie koła</li>
+				<li>Typ nadwozia: Kompakt</li>
+				<li>Liczba drzwi: 5</li>
+				<li>Liczba miejsc: 5</li>
+				<li>Kolor lakieru: Czarny</li>
+				<li>Faktura VAT: Tak</li>
+				<li>Pierszy właściciel: Nie</li>
+				<li>Bezwypadkowy: Tak</li>
+				<li>Serwisowany w ASO: Tak</li>
+				<li>Przegląd do: 02/12/2022</li>
+				<li>Ubezpieczenie do: 28/10/2022</li>
+
+			</div>
+			<div class = "cenaszczegoly">
+				
+			</div>
+		</div>
+		<div style = "clear:both"></div>
+
+		<div class = "pojemnikoferta">
+
+			<h3>Opis</h3>
+			<div class = "opisoferta">
+
+				Mam do zaoferowania sprowadzone w 2020r a następnie w pełni opłacone i zarejestrowane na moją osobę Honda Civic VIII generacji po Liftingu w pełnej opcji wyposażenia Executive z roku modelowego 2011/Rej 2011.
+				<br/><br/>
+				Auto z dynamicznym niewyżyłowanym i bezawaryjnym silnikiem benzynowym 1.8 140KM które idealnie współpracuje z manualną skrzynią biegów.
+				<br/><br/>
+				Auto z rynku europejskiego ,ABSOLUTNIE 100% bezwypadkowe , lakier nie posiada żadnych zadrapań czy wgnieceń. Przez cały okres użytkowania garażowany.<br/>
+				Oryginalny przebieg przez co STAN AUTA JEST PERFEKCYJNY !! ( na lakierze żadnych rys a środek niezniszczony )zaledwie 220tys.km co przy żywotności tych silników jest znikomy.<br/>
+				Systemy w aucie są sprawne, silnik nie myty bez jakichkolwiek wycieków czy najmniejszych zapoceń.
+				<br/><br/>
+				ZAREJESTROWANY W POLSCE!! ( ŻADNYCH DODATKOWYCH KOSZTÓW i nieprzyjemności w załatwianiu formalności w urzędach JAK W PRZYPADKU AUT ŚWIEŻO SPROWADZONYCH ) opłacony z nowym przeglądem technicznym oraz polisą OC.
+				<br/><br/>
+				Uwaga!<br/>
+				Niniejsze ogłoszenia jest wyłącznie informacją handlową i nie stanowi
+				oferty w myśl art 66,A§1 Kodeksu Cywilnego. Sprzedający nie odpowiada
+				za ewentualne błędy lub nieaktualności ogłoszenia.
+				Informacje umieszczone w ogłoszeniu służą wyłącznie celom informacyjnym.
+				Nie stanowią oferty w rozumieniu art.4 ustawy z dnia 27 Lipca 2002 roku o szczególnych warunkach sprzedaży konsumenckiej.
+
+			</div>
+
+			<h3>Wyposażenie</h3>
+
+			<div class = "wyposazenie">
+				<div class = "wyposazenie2">
+
+					<i class="demo-icon icon-ok-circled2"></i>ABS, 
+					<i class="demo-icon icon-ok-circled2"></i>Elektryczne szyby przednie, 
+					<i class="demo-icon icon-ok-circled2"></i>Poduszka powietrzna kierowcy, 
+					<i class="demo-icon icon-ok-circled2"></i>Wspomaganie kierownicy, 
+					<i class="demo-icon icon-ok-circled2"></i>ASR (kontrola trakcji), 
+					<i class="demo-icon icon-ok-circled2"></i>Czujnik zmierzchu, 
+					<i class="demo-icon icon-ok-circled2"></i>Elektrochromatyczne lusterko wsteczne, 
+					<i class="demo-icon icon-ok-circled2"></i>Gniazdo AUX, 
+					<i class="demo-icon icon-ok-circled2"></i>Klimatyzacja automatyczna, 
+					<i class="demo-icon icon-ok-circled2"></i>Kurtyny powietrzne, 
+					<i class="demo-icon icon-ok-circled2"></i>Podgrzewane lusterka boczne, 
+					<i class="demo-icon icon-ok-circled2"></i>Poduszki boczne tylne, 
+					<i class="demo-icon icon-ok-circled2"></i>Tapicerka welurowa, 
+					<i class="demo-icon icon-ok-circled2"></i>CD, 
+					<i class="demo-icon icon-ok-circled2"></i>Elektrycznie ustawiane lusterka, 
+					<i class="demo-icon icon-ok-circled2"></i>Poduszka powietrzna pasażera, 
+					<i class="demo-icon icon-ok-circled2"></i>Alarm, 
+					<i class="demo-icon icon-ok-circled2"></i>Bluetooth, 
+					<i class="demo-icon icon-ok-circled2"></i>Czujniki parkowania tylne, 
+					<i class="demo-icon icon-ok-circled2"></i>Elektryczne szyby tylne, 
+					<i class="demo-icon icon-ok-circled2"></i>Hak, 
+					<i class="demo-icon icon-ok-circled2"></i>Klimatyzacja dwustrefowa, 
+					<i class="demo-icon icon-ok-circled2"></i>MP3, 
+					<i class="demo-icon icon-ok-circled2"></i>Podgrzewane przednie siedzenia, 
+					<i class="demo-icon icon-ok-circled2"></i>Światła przeciwmgielne, 
+					<i class="demo-icon icon-ok-circled2"></i>Tempomat, 
+					<i class="demo-icon icon-ok-circled2"></i>Centralny zamek, 
+					<i class="demo-icon icon-ok-circled2"></i>Immobilizer, 
+					<i class="demo-icon icon-ok-circled2"></i>Radio fabryczne, 
+					<i class="demo-icon icon-ok-circled2"></i>Alufelgi, 
+					<i class="demo-icon icon-ok-circled2"></i>Czujnik deszczu, 
+					<i class="demo-icon icon-ok-circled2"></i>Dach panoramiczny, 
+					<i class="demo-icon icon-ok-circled2"></i>ESP (stabilizacja toru jazdy), 
+					<i class="demo-icon icon-ok-circled2"></i>Isofix, 
+					<i class="demo-icon icon-ok-circled2"></i>Komputer pokładowy, 
+					<i class="demo-icon icon-ok-circled2"></i>Nawigacja GPS, 
+					<i class="demo-icon icon-ok-circled2"></i>Poduszki boczne przednie, 
+					<i class="demo-icon icon-ok-circled2"></i>Światła Xenonowe, 
+					<i class="demo-icon icon-ok-circled2"></i>Wielofunkcyjna kierownica
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<div class = "stopka">
+		&copy Designed by 
+		<a href = "https://www.facebook.com/mikiprzewo" target="_blank">Mikołaj Przewoźny</a>, 
+		<a href = "https://www.facebook.com/profile.php?id=100008271615667" target="_blank">Kamil Walkowiak</a>
+	</div>
+
+</body>
+</html>

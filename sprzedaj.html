@@ -1,0 +1,101 @@
+s<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>MKAuto - Komis Samochodowy</title>
+	<meta name="description" content="Komis samochodowy z wieloletnim stazem. Sprzedaz kupno samochodów uzywanych na terenie całej Polski. Mamy odziały w kilku miastach w kraju.">
+	<meta name="keywords" content="samochód, auto, sprzedaj, kup, komis samochodowy, dealer, leasing">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="main.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	
+
+	
+</head>
+
+<body>
+
+	<header>
+		
+		<div class="menu">
+			<li><a href="index.html">Strona Główna</a></li>
+			<li><a href="kup.html">Kup Samochód</a></li>
+			<li><a href="sprzedaj.html">Sprzedaj Samochód</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</div>
+	
+	</header>
+
+
+	<div class = "pojemnik">
+		
+
+		<h1>Sprzedaj Samochód</h1>
+	
+
+		<form action="form.php" method="post" enctype="multipart/form-data">
+			<div class='formularz'>
+
+					<label><input class='dane-auto' type="text" name="nazwa" placeholder="  Marka Samochodu, Model Samochodu" required></label>
+
+					<label><input class='dane-auto' type="number" name="rok" placeholder="  Rok Produkcji" step="1" required></label>
+
+					<label><input class='dane-auto' type="text" name="silnik" placeholder="  Pojemość Silnika, Typ Paliwa" required></label>
+
+					<label><input class='dane-auto' type="text" name="przebieg" placeholder="  Przebieg Samochodu" required></label>
+
+					<label><input class='dane-auto' type="tel" name="telefon" placeholder="  Telefon Kontaktowy" required></label>
+
+			</div>
+		
+			<div>
+				<div><label for="komentarz"></label></div>
+				<textarea class="info-auto" name="komentarz" id="komentarz" rows="10" cols="40" placeholder="  Dodatkowe Informacje O Samochodzie"></textarea>
+			</div>
+
+			<div>
+				 <input type="file" name="obraz" accept="image/x-png,image/gif,image/jpeg" multiple>
+			</div>
+
+				<br />
+
+			<div>
+				<input class ='przycisk' type="submit" value="Wyślij">
+			</div>
+		</form>
+
+
+
+
+
+
+
+	
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class = "stopka">
+		&copy Designed by 
+		<a href = "https://www.facebook.com/mikiprzewo" target="_blank">Mikołaj Przewoźny</a>, 
+		<a href = "https://www.facebook.com/profile.php?id=100008271615667" target="_blank">Kamil Walkowiak</a>
+	</div>
+
+</body>
+</html>

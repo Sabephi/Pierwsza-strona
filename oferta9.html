@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>MKAuto - Komis Samochodowy</title>
+	<meta name="description" content="Komis samochodowy z wieloletnim stazem. Sprzedaz kupno samochodów uzywanych na terenie całej Polski. Mamy odziały w kilku miastach w kraju.">
+	<meta name="keywords" content="samochód, auto, sprzedaj, kup, komis samochodowy, dealer, leasing">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="main.css">
+	<link rel = "stylesheet" href = "css/fontello.css" type = "text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	
+	
+
+	
+</head>
+
+<body>
+
+	<header>
+		
+		<div class="menu">
+			<li><a href="index.html">Strona Główna</a></li>
+			<li><a href="kup.html">Kup Samochód</a></li>
+			<li><a href="sprzedaj.html">Sprzedaj Samochód</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</div>
+	
+	</header>
+
+
+
+	<div class = "pojemnik">
+		<div class = "nazwaauta">
+			<h1>Mercedes-Benz Vito</h1>
+		</div>
+
+		<div class = "slider">
+			<div class="slider-pojemnik">
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">1 / 7</div>
+					<img src="img/oferta9/1.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">2 / 7</div>
+					<img src="img/oferta9/2.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">3 / 7</div>
+					<img src="img/oferta9/3.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">4 / 7</div>
+					<img src="img/oferta9/4.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">5 / 7</div>
+					<img src="img/oferta9/5.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">6 / 7</div>
+					<img src="img/oferta9/6.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">7 / 7</div>
+					<img src="img/oferta9/7.jpeg" style="width:100%">
+				</div>
+				
+				<a class="poprzedni" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="nastepny" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+				<span class="kropka" onclick="currentSlide(1)"></span>
+				<span class="kropka" onclick="currentSlide(2)"></span>
+				<span class="kropka" onclick="currentSlide(3)"></span>
+				<span class="kropka" onclick="currentSlide(4)"></span>
+				<span class="kropka" onclick="currentSlide(5)"></span>
+				<span class="kropka" onclick="currentSlide(6)"></span>
+				<span class="kropka" onclick="currentSlide(7)"></span>
+			</div>
+
+			<script>
+						var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("kropka");
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" aktywny", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " aktywny";
+				}
+		</script>
+
+		</div>
+		<div class = "szczegoly">
+
+			<div class = "cenaszczegoly">
+				85 500 PLN
+			</div>
+			<div class = "infoszczegoly1">
+
+				<li>Kategoria: Osobowe</li>
+				<li>Marka pojazdu: Mercedes-Benz</li>
+				<li>Model pojazdu: Vito</li>
+				<li>Wersja: 111 CDI </li>
+				<li>Generacja: W447</li>
+				<li>Rok produkcji: 2017</li>
+				<li>Przebieg: 176 361 km</li>
+				<li>Pojemność silnika: 1598 cm<sup>3</sup></li>
+				<li>Podzaj paliwa: Diesel</li>
+				<li>Moc: 114 KM</li>
+				<li>Skrzynia biegów: Manualna</li>
+
+			</div>
+			<div class = "infoszczegoly2">
+
+				<li>Napęd: Na przednie koła</li>
+				<li>Typ nadwozia: Minivan</li>
+				<li>Liczba drzwi: 5</li>
+				<li>Liczba miejsc: 9</li>
+				<li>Kolor lakieru: Biały</li>
+				<li>Faktura VAT: Tak</li>
+				<li>Pierszy właściciel: Nie</li>
+				<li>Bezwypadkowy: Tak</li>
+				<li>Serwisowany w ASO: Tak</li>
+				<li>Przegląd do: 21/05/22</li>
+				<li>Ubezpieczenie do: 05/11/22</li>
+
+			</div>
+			<div class = "cenaszczegoly">
+				
+			</div>
+		</div>
+		<div style = "clear:both"></div>
+
+		<div class = "pojemnikoferta">
+
+			<h3>Opis</h3>
+			<div class = "opisoferta">
+				Mercedes Vito Tourer Long, 
+				1 właściciel, 
+				salonowy, 
+				oryginalny udokumentowany przebieg 176 361km, 
+				oryginalna fabryczna klimatyzacja dla kierowcy i pasażerów, 
+				9 osobowy, 
+				ciemne szyby, 
+				całą przestrzeń pasażerska tapicerowane, 
+				elektryczne szyby, 
+				elektryczne lusterka, 
+				pojazd posiada alufelgi, 
+				dodatkowo dokładam do samochodu komplet całych kół zimowych felgi plus opony, 
+				wszystkie podzespoły takie tak silnik, skrzynia biegów, sprzęgło, 
+				hamulce, zawieszenie pracują bez problemu, 
+				wizualnie auto w idealnym stanie, 
+				środek auta jak nowy, 
+				przebieg auta autentyczny potwierdzony książką servisowa + wydrukami tuv, 
+				auto na chwilę obecną nie wymaga najmniejszego wkładu finansowego, 
+				możliwość sprawdzenia auta na dowolnej stacji kontroli pojazdów.
+
+			</div>
+
+			<h3>Wyposażenie</h3>
+
+			<div class = "wyposazenie">
+				<div class = "wyposazenie2">
+				
+					<i class="demo-icon icon-ok-circled2"></i>ABS, 
+					<i class="demo-icon icon-ok-circled2"></i>Centralny zamek, 
+					<i class="demo-icon icon-ok-circled2"></i>ESP (stabilizacja toru jazdy), 
+					<i class="demo-icon icon-ok-circled2"></i>Podgrzewane lusterka boczne, 
+					<i class="demo-icon icon-ok-circled2"></i>Poduszka powietrzna pasażera, 
+					<i class="demo-icon icon-ok-circled2"></i>Światła do jazdy dziennej, 
+					<i class="demo-icon icon-ok-circled2"></i>ASR (kontrola trakcji), 
+					<i class="demo-icon icon-ok-circled2"></i>Czujniki parkowania przednie, 
+					<i class="demo-icon icon-ok-circled2"></i>Elektryczne szyby przednie, 
+					<i class="demo-icon icon-ok-circled2"></i>Podgrzewana przednia szyba, 
+					<i class="demo-icon icon-ok-circled2"></i>Przyciemniane szyby, 
+					<i class="demo-icon icon-ok-circled2"></i>Alufelgi, 
+					<i class="demo-icon icon-ok-circled2"></i>Czujniki parkowania tylne, 
+					<i class="demo-icon icon-ok-circled2"></i>Klimatyzacja dwustrefowa, 
+					<i class="demo-icon icon-ok-circled2"></i>Poduszka powietrzna kierowcy, 
+					<i class="demo-icon icon-ok-circled2"></i>Wspomaganie kierownicy
+
+					
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<div class = "stopka">
+		&copy Designed by 
+		<a href = "https://www.facebook.com/mikiprzewo" target="_blank">Mikołaj Przewoźny</a>, 
+		<a href = "https://www.facebook.com/profile.php?id=100008271615667" target="_blank">Kamil Walkowiak</a>
+	</div>
+
+</body>
+</html>

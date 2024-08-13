@@ -1,0 +1,680 @@
+body
+{
+    background-color: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    margin: 0;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 40px;
+    color: #333333;
+}
+
+h2
+{
+    color: rgb(226, 136, 1);
+    font-size: 36px;
+    margin: 0px;
+}
+
+h3
+{
+    text-align: center;
+    margin: 10px;
+    color: #333333;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.menu
+{
+    background-color: rgb(36, 36, 36);
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	font-size: 22px;
+    line-height: 150%;
+	min-height: 35px;
+    text-align: center;
+
+    width: 100%;
+}
+
+.menu > li
+{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 2px solid #dba92c;
+}
+
+.menu > li:last-child
+{
+	border-right: none;
+}
+
+.menu a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu a:hover
+{
+	color: #fba92c;
+}
+
+
+.menu1
+{
+    background-color: rgb(36, 36, 36);
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	font-size: 22px;
+    line-height: 150%;
+	min-height: 35px;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+.menu1 > li
+{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 2px solid #dba92c;
+}
+
+.menu1 > li:last-child
+{
+	border-right: none;
+}
+
+.menu1 a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu1 a:hover
+{
+	color: #fba92c;
+}
+
+
+
+.pojemnik
+{
+    margin-left: auto;
+	margin-right: auto;
+    min-height: 950px;
+	width: 1200px;
+	text-align: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.dlaczegomy
+{
+    width: 1200px;
+    background-color: #dddddd;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.gwarancja
+{
+    float: left;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    margin-left: 100px;
+    margin-right: 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.prawozwrotu
+{
+    float: left;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.zakupzdalny
+{
+    float: left;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    margin-left: 25px;
+    margin-right: 100px;
+    margin-top: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.fontelek
+{
+    font-size: 60px;
+    color: #555555;
+    margin-top: 50px;
+    width: 300px;
+    height: 100px;
+}
+
+.dopisekfontelek
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.dopisekfontelek1
+{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+    color:rgb(226, 136, 1);
+    margin-top: 20px;
+    height: 100px;
+}
+.dopisekfontelek2 
+{
+    color: #444444;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.oferta
+{
+    width: 1050px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #888888;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.oferta:hover
+{
+    width: 1050px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #888888;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 2px;
+    background-color: #eeeeee;
+}
+
+.oferta:last-child
+{
+    margin-bottom: 10px;
+}
+
+.img
+{
+    float: left;
+    height: 180px;
+    width: 240px;
+    margin: 10px;
+}
+.img img
+{
+    height: 176px;
+    width: 236px;
+    border-radius: 10px;
+}
+
+.info
+{
+    float: left;
+    width: 766px;
+    height: 176px;
+    margin: 10px;
+}
+
+.nazwa
+{
+    width: 700px;
+    height: 40px;
+    margin: 10px;
+    font-size: 24px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.nazwaauta
+{
+    font-size: 40px;
+    background-color: #333333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nazwaauta h1
+{
+    color: white;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.nazwaauta h1:hover
+{
+    color: #fba92c;
+}
+
+.opis
+{
+    float: left;
+    width: 510px;
+    height: 100px;
+    margin: 10px;
+}
+
+.cena
+{
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    font-size: 28px;
+    color: rgb(226, 136, 1);
+    font-weight: 700;
+}
+
+.cena p
+{
+   margin-top: 50px;
+}
+
+.rocznik
+{
+    float: left;
+    text-align: left;
+    vertical-align: center;
+    width:200px;
+    height:30px;
+}
+
+.przebieg
+{
+    float: left;
+    text-align: left;
+    vertical-align: center;
+    width:200px;
+    height:30px;
+}
+
+.pojemnosc
+{
+    float: left;
+    text-align: left;
+    vertical-align: center;
+    width:200px;
+    height:30px;
+}
+
+.paliwo
+{
+    float: left;
+    text-align: left;
+    vertical-align: center;
+    width:200px;
+    height:30px;
+}
+
+.slider
+{
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 10px;
+    float: left;
+}
+
+* {box-sizing:border-box}
+
+.slider-pojemnik 
+{
+  width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides 
+{
+  display: none;
+}
+
+.poprzedni, .nastepny
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.nastepny 
+{
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+.poprzedni 
+{
+  left: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+.poprzedni:hover, .nastepny:hover 
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numer-zdj 
+{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.kropka
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.aktywny, .kropka:hover 
+{
+  background-color: #717171;
+}
+
+.fade 
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade 
+{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade 
+{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.szczegoly
+{
+    width: 446px;
+    height: 446px;
+    margin-right: 50px;
+    margin-left: 25px;
+    margin-top: 10px;
+    float: left;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #aaaaaa;
+    border-radius: 10px;
+}
+
+.cenaszczegoly
+{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(226, 136, 1);
+    font-size: 40px;
+    font-weight: 700;
+    height: 50px;
+}
+
+.infoszczegoly1
+{
+    float: left;
+    margin: 10px;
+    margin-left: 14px;
+    margin-top:35px;
+    height: 356px;
+    width: 197px;
+    font-size: 13px;
+    text-align: left;
+    color: #333333;
+    line-height: 23px;
+}
+
+.infoszczegoly2
+{
+    float: left;
+    margin: 10px;
+    margin-top: 35px;
+    height: 356px;
+    width: 201px;
+    font-size: 13px;
+    text-align: left;
+    color: #333333;
+    line-height: 23px;
+}
+
+.pojemnikoferta
+{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #aaaaaa;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    width: 1100px;
+    min-height: 600px;
+}
+
+.opisoferta
+{
+    margin-top: 17px;
+    width: 900px;
+    min-height: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #333333;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.wyposazenie
+{
+    width: 900px;
+    min-height: 100px;
+    margin: 17px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 17px;
+    line-height: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #cccccc;
+    border-radius: 10px;
+}
+
+.wyposazenie2
+{
+    margin: 10px;
+}
+
+.formularz
+{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dane-auto
+{
+    width: 600px;
+    height: 40px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.info-auto
+{
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 100px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.przycisk
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dba92c;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.przycisk:hover
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(226, 136, 1);
+    color: white;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.dane
+{
+    width: 1200px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    line-height: 10px;
+    font-size: 20px;
+    color: rgb(36, 36, 36);
+}
+
+.danefir
+{
+    float: left;
+    width: 579px;
+    padding: 10px;
+    color: rgb(36, 36, 36);
+    border-right:2px solid #555555;
+}
+
+.danekon
+{
+    float: left;
+    width: 579px;
+    padding: 10px;
+    color: rgb(36, 36, 36);
+}
+
+.stopka
+{
+    background-color: rgb(36, 36, 36);
+	color: #fff;
+	margin: 0;
+	padding: 9px;
+	font-size: 13px;
+	min-height: 20px;
+    width: 100%;
+    line-height: 150%;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.stopka a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.stopka a:hover
+{
+    text-decoration: none;
+    color: #dba92c;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+iframe
+{
+    margin-bottom: 10px;
+}

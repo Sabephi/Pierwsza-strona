@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>MKAuto - Komis Samochodowy</title>
+	<meta name="description" content="Komis samochodowy z wieloletnim stazem. Sprzedaz kupno samochodów uzywanych na terenie całej Polski. Mamy odziały w kilku miastach w kraju.">
+	<meta name="keywords" content="samochód, auto, sprzedaj, kup, komis samochodowy, dealer, leasing">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="main.css">
+	<link rel = "stylesheet" href = "css/fontello.css" type = "text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	
+	
+
+	
+</head>
+
+<body>
+
+	<header>
+		
+		<div class="menu">
+			<li><a href="index.html">Strona Główna</a></li>
+			<li><a href="kup.html">Kup Samochód</a></li>
+			<li><a href="sprzedaj.html">Sprzedaj Samochód</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</div>
+	
+	</header>
+
+
+
+	<div class = "pojemnik">
+		<div class = "nazwaauta">
+			<h1>Porsche Boxster</h1>
+		</div>
+
+		<div class = "slider">
+			<div class="slider-pojemnik">
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">1 / 8</div>
+					<img src="img/oferta3/1.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">2 / 8</div>
+					<img src="img/oferta3/2.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">3 / 8</div>
+					<img src="img/oferta3/3.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">4 / 8</div>
+					<img src="img/oferta3/4.jpeg" style="width:100%">
+				</div>	
+				
+				<div class="mySlides fade">
+					<div class="numer-zdj">5 / 8</div>
+					<img src="img/oferta3/5.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">6 / 8</div>
+					<img src="img/oferta3/6.jpeg" style="width:100%">
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numer-zdj">7 / 8</div>
+					<img src="img/oferta3/7.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numer-zdj">8 / 8</div>
+					<img src="img/oferta3/8.jpeg" style="width:100%">
+				</div>
+				
+			
+				<a class="poprzedni" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="nastepny" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+				<span class="kropka" onclick="currentSlide(1)"></span>
+				<span class="kropka" onclick="currentSlide(2)"></span>
+				<span class="kropka" onclick="currentSlide(3)"></span>
+				<span class="kropka" onclick="currentSlide(4)"></span>
+				<span class="kropka" onclick="currentSlide(5)"></span>
+				<span class="kropka" onclick="currentSlide(6)"></span>
+				<span class="kropka" onclick="currentSlide(7)"></span>
+				<span class="kropka" onclick="currentSlide(8)"></span>
+			</div>
+
+			<script>
+						var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("kropka");
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" aktywny", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " aktywny";
+				}
+		</script>
+
+		</div>
+		<div class = "szczegoly">
+
+			<div class = "cenaszczegoly">
+				89 900 PLN
+			</div>
+			<div class = "infoszczegoly1">
+
+				<li>Kategoria: Osobowe</li>
+				<li>Marka pojazdu: Porsche</li>
+				<li>Model pojazdu: Boxster</li>
+				<li>Wersja: 2.5</li>
+				<li>Generacja: 986</li>
+				<li>Rok produkcji: 1999</li>
+				<li>Przebieg: 121 000 km</li>
+				<li>Pojemność silnika: 2 480 cm<sup>3</sup></li>
+				<li>Podzaj paliwa: Benzyna</li>
+				<li>Moc: 204 KM</li>
+				<li>Skrzynia biegów: Manualna</li>
+
+			</div>
+			<div class = "infoszczegoly2">
+
+				<li>Napęd: Na tylnie koła</li>
+				<li>Typ nadwozia: Kabriolet</li>
+				<li>Liczba drzwi: 2</li>
+				<li>Liczba miejsc: 2</li>
+				<li>Kolor lakieru: Niebieski</li>
+				<li>Faktura VAT: Tak</li>
+				<li>Pierszy właściciel: Nie</li>
+				<li>Bezwypadkowy: Tak</li>
+				<li>Serwisowany w ASO: Tak</li>
+				<li>Przegląd do: 16/09/2022</li>
+				<li>Ubezpieczenie do: 23/03/2022</li>
+
+			</div>
+			<div class = "cenaszczegoly">
+				
+			</div>
+		</div>
+		<div style = "clear:both"></div>
+
+		<div class = "pojemnikoferta">
+
+			<h3>Opis</h3>
+			<div class = "opisoferta">
+
+				Stan kolekcjonerski. Rzadka wersja z twardym i miękkim dachem. Import Szwajcaria, książka serwisowa z wszystkimi wpisami. Serwisowany na bieżąco, bez wkładu finansowego. Po opłatach. Zapraszam konkretnie zainteresowanych.
+				<br/><br/>
+				Przebieg potwierdzony certyfikatem exportowym i książką serwisową.<br/>
+				Serwisowany i użytkowany regularnie, odnotowane przebiegi przy serwisach w książce serwisowej
+				<br/><br/>
+				Samochód pochodzi z rynku Japońskiego, zachowany w wyśmienitym stanie technicznym i wizualnym.<br/>
+				Sprowadzony do Polski w grudniu 2021. Opłacone cło i akcyza. Pojazd gotowy do rejestracji z kompletem niezbędnych dokumentów.
+				<br/><br/>
+				Uwaga!<br/>
+				Niniejsze ogłoszenia jest wyłącznie informacją handlową i nie stanowi
+				oferty w myśl art 66,A§1 Kodeksu Cywilnego. Sprzedający nie odpowiada
+				za ewentualne błędy lub nieaktualności ogłoszenia.
+				Informacje umieszczone w ogłoszeniu służą wyłącznie celom informacyjnym.
+				Nie stanowią oferty w rozumieniu art.4 ustawy z dnia 27 Lipca 2002 roku o szczególnych warunkach sprzedaży konsumenckiej.
+
+			</div>
+
+			<h3>Wyposażenie</h3>
+
+			<div class = "wyposazenie">
+				<div class = "wyposazenie2">
+					<i class="demo-icon icon-ok-circled2"></i> ABS, 
+					<i class="demo-icon icon-ok-circled2"></i> ASR (kontrola trakcji), 
+					<i class="demo-icon icon-ok-circled2"></i> Elektrycznie ustawiane fotele, 
+					<i class="demo-icon icon-ok-circled2"></i> Klimatyzacja automatyczna, 
+					<i class="demo-icon icon-ok-circled2"></i> Tapicerka skórzana, 
+					<i class="demo-icon icon-ok-circled2"></i> Alarm, 
+					<i class="demo-icon icon-ok-circled2"></i> Centralny zamek, 
+					<i class="demo-icon icon-ok-circled2"></i> Elektrycznie ustawiane lusterka, 
+					<i class="demo-icon icon-ok-circled2"></i> Podgrzewane przednie siedzenia, 
+					<i class="demo-icon icon-ok-circled2"></i> Wspomaganie kierownicy, 
+					<i class="demo-icon icon-ok-circled2"></i> Alufelgi, 
+					<i class="demo-icon icon-ok-circled2"></i> Elektryczne szyby przednie, 
+					<i class="demo-icon icon-ok-circled2"></i> Immobilizer, 
+					<i class="demo-icon icon-ok-circled2"></i> Światła Xenonowe
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<div class = "stopka">
+		&copy Designed by 
+		<a href = "https://www.facebook.com/mikiprzewo" target="_blank">Mikołaj Przewoźny</a>, 
+		<a href = "https://www.facebook.com/profile.php?id=100008271615667" target="_blank">Kamil Walkowiak</a>
+	</div>
+
+</body>
+</html>
